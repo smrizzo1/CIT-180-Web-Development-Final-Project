@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Bee & Butterfly Garden Workbee Volunteers</title>
+<style type="text/css">
+body {
+    font-family: "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", "DejaVu Sans", Verdana, "sans-serif";
+    color: rgb(125, 3, 177);
+    font-size: 14pt;
+}
+form {
+    display: flex;
+    flex-wrap: wrap;
+    width: 60%;
+}
+h1 {
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-size: 2em;
+    text-align: center;
+    color: rgb(125, 3, 177);
+    font-weight: 900;
+    text-shadow: 1px 1px white;
+    width: 60%;
+    background-color: rgb(245, 231, 29);
+    border: dotted;
+    border-width: 4px;
+    border-color: rgb(245, 151, 29);
+    border-radius: 20px;
+    opacity: .80;
+}
+legend {
+    font-size: 1.5em;
+    font-weight: 900;
+    margin-top: 20px;
+    margin-left: 10px;
+    color: green;
+    border: 3px dotted rgb(125, 3, 177);
+    background-color: linen;
+}
+label {
+    text-align: right;
+    width: 150px;
+    float: left;
+    padding-right: 10px;
+    color: rgb(125, 3, 177);
+    font-size: 12pt;
+    vertical-align: text-top;
+}
+p {
+    font-weight: 900;
+}
+fieldset {
+    padding: 1%;
+    flex: 1;
+    min-width: 400px;
+    background-color: rgb(245, 231, 29);
+    overflow:auto; 
+    opacity:.80;
+    border: dotted;
+    border-width: 4px;
+    border-color: rgb(245, 151, 29);
+    border-radius: 20px;
+}
+.inputButton {
+    font-size: 12pt;
+    width: 100px;
+    height: 30px;
+    font-size: 12pt;
+    background-color: green;
+    color: white;
+    font-weight: 900;
+    margin-top: 50px;
+    box-shadow: 2px 2px 2px black;
+    text-align: center;
+}
+input {
+    text-align: left;
+    width: 160px;
+    font-size: 11pt;
+    color: rgb(125, 3, 177);
+}
+.shortinputButton {
+    width: 20px;
+    text-align: left;
+}
+.center {
+    margin-left: auto;
+    margin-right:auto;
+}
+.parallax {
+    background-image: url(media/monarch72021_Optimized.jpg);
+    height: 100%;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+</style>
+</head>
+<body>
+<article>
+<div class="parallax">
+  <h1> Bee & Butterfly Garden "Workbee" Volunteer Sign-up</h1>
+  <form name="signmeup" id="signmeup" action="https://lisabalbach.com/CIT180/Lesson8/FormProcessor.html" method="get" >
+    <input type="hidden" name="mailto" value="mailto:srizzo@nmc.edu">
+    <fieldset class="center">
+      <legend>Contact Information:</legend>
+      <p>
+        <label for="name"  >Name:</label>
+        <input type="text" id="name" name="name" size="100"  required autofocus/>
+        <br />
+      </p>
+      <p>
+        <label for="address"  >Address:</label>
+        <input  type="text" id="address" name="address" size="100"  />
+        <br/>
+      </p>
+      <p>
+        <label for="city"  >City:</label>
+        <input type="text"  id="city" name="city" size="50"/>
+      </p>
+      <p>
+        <label for="state"  >State:</label>
+        <input type="text"  id="state" name="state" size="5" value="MI" />
+      </p>
+      <p>
+        <label for="zip"   >Zip:</label>
+        <input type="text"  id="zip" name="zip" size="10"/>
+        <br/>
+      </p>
+      <p>
+        <label for="telephone"  >Tele#:</label>
+        <input type="tel" id="telephone"  name="telephone" size="12"  placeholder="(555)555-5555" required/>
+        <br/>
+      </p>
+      <p>
+        <label for="Email"  >E-Mail Address:</label>
+        <input type="email" id="email"  name="email" size="50"  placeholder="name@yourisp.com" required/>
+      </p>
+    </fieldset>
+    <fieldset class="center">
+      <legend>Knowledge/Tools:</legend>
+      <div style="padding-left:30px;">
+        <table style="border:none;min-width:400px;"	>
+          <tr style="vertical-align:top;">
+            <td><h3>Gardening Experience</h3>
+              <p>
+                <label for="newbee">"Newbee" (How do I use a shovel?)</label>
+                <input type="radio" name="options" id="Newbee" value="Newbee" class="shortinputButton" />
+              </p>
+              <p>
+                <label for="Workerbee">"Worker bee" (Tell me where to plant and I'll plant) </label>
+                <input type="radio" name="options" id="Workerbee" value="Workerbee" class="shortinputButton"/>
+              </p>
+              <p>
+                <label for="Queenbee">"Queen bee" (I've been at this for quite a while) </label>
+                <input type="radio" name="options" id="Queenbee" value="Queenbee" class="shortinputButton"/>
+              </p>
+              </td>
+            <td style="padding-left:25px"><h3>Tools I Can Bring:</h3>
+              <p>
+                <input type="checkbox" name="Boxes" id="Shovel" value="Shovel" class="shortinputButton">
+                <label for="Shovel">Shovel</label>
+              </p>
+              <p>
+                <input type="checkbox" name="Boxes" id="Hoe" value="Hoe" class="shortinputButton">
+                <label for="Hoe">Hoe</label>
+              </p>
+              <p>
+                <input type="checkbox" name="Boxes" id="Rake" value="Rake" class="shortinputButton">
+                <label for="Rake">Rake</label>
+              </p>
+              <p>
+                <input type="checkbox" name="Boxes" id="Wheelbarrow" value="Wheelbarrow" class="shortinputButton">
+                <label for="Wheelbarrow">Wheelbarrow</label>
+              </p>
+              <p>
+                <input type="checkbox" name="Boxes" id="Justmyself" value="Justmyself" class="shortinputButton">
+                <label for="Justmyself">Just myself!</label>
+              </p></td>
+          </tr>
+        </table>
+      </div>
+    </fieldset>
+    <fieldset class="center">
+      <legend>Availability:</legend>
+      <div style="padding-left:30px;">
+        <p>Please select the days and times you are available <span><small>(to select more than one time, press CTL while clicking)</small></span></p>
+        <p>Day(s) of the week:<br>
+          <select id="select1" name="select1" size="5" multiple="multiple" style="width:200px;" >
+            <option value="Monday">Monday</option>
+            <option value="Tuesday">Tuesday</option>
+            <option value="Wednesday">Wednesday</option>
+            <option value="Thursday">Thursday</option>
+            <option value="Friday">Friday</option>
+            <option value="Saturday">Saturday</option>
+            <option value="Sunday">Sunday</option>
+          </select>
+        </p>
+        <p>Time of day:<br>
+          <input  list="select2" id="timeofday" name="timeofday" placeholder="Please make a selection" style="width:200px;">
+          <datalist id="select2">
+            <option value="8-10 A.M."></option>
+            <option value="1o-12 A.M."></option>
+            <option value="1-3 P.M."> </option>
+            <option value="3-5 P.M"></option>
+            <option value="5-7 P.M."> </option>
+          </datalist>
+        </p>
+      </div>
+    </fieldset>
+    <fieldset class="center">
+      <legend>Additional Info:</legend>
+      <p>Please provide any additional information here:<br/>
+        <textarea rows="10" cols="50" id="TextArea" name="TextArea" wrap="soft" style="font-size:14pt;"></textarea>
+      </p>
+      <p style="padding-bottom:20px; text-align:center;">
+        <input type="submit" class="inputButton" value="Submit"   style="margin-right:20px"/>
+        <input type="reset"  class="inputButton" value="Reset" />
+      </p>
+    </fieldset>
+  </form>
+</article>
+</body>
+</html>
